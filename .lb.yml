@@ -1,0 +1,10 @@
+workspace:
+  base: /opt
+  path: /
+
+registry:
+  - name: alpine
+    settings:
+      auto_tag: true
+      auto_tag_suffix: release
+      dockerfile: "./Dockerfile"
