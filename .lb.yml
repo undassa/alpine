@@ -8,3 +8,7 @@ registry:
       auto_tag: true
       auto_tag_suffix: release
       dockerfile: "./Dockerfile"
+    when:
+      event:
+        - push
+        - tag
