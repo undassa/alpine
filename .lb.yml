@@ -1,6 +1,7 @@
 workspace:
   path: /data
- 
+
+
 registry:
   - name: alpine
     settings:
