@@ -1,14 +1,15 @@
 workspace:
-  base: /opt
-  path: /
+  path: /data
+
 
 registry:
   - name: alpine
     settings:
       auto_tag: true
-      auto_tag_suffix: release
-      dockerfile: "./Dockerfile"
+      dockerfile: ./Dockerfile
+      context: .
     when:
+      branch:
+        - master
       event:
         - push
-        - tag
